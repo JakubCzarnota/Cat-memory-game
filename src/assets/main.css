@@ -1,0 +1,32 @@
+@import './base.css';
+
+* {
+  user-select: none;
+  /* supported by Chrome and Opera */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+}
+
+#app {
+  width: 50vw;
+  padding: 2em .75em;
+  margin: 0 auto;
+  background-color: var(--vt-c-black-mute);
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  #app {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+  }
+}
